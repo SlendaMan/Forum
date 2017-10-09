@@ -15,14 +15,17 @@
 					echo "<p>Fel användarnamn eller lösenord!</p>";
 			}
 		?>
-		<h1>Logga in till hemliga sida</h1>
-		<form action="checkInlogg.php" method="post">
+		<center>
+		<p class="loggain"> NienGag</p>
+		<form class="loginform" action="checkInlogg.php" method="post">
 			<table>
-				<tr><td>Användarnamn:</td><td><input type="text" name="uname"></td></tr>
-				<tr><td>Lösenord:</td><td><input type="password" name="passw"></td></tr>
-				<tr><td colspan="2"><input type="submit" value="Logga in"></td></tr>
+				<tr><td>Username</td><br><td><input placeholder="Enter Username" col="10" type="text" name="uname"></td></tr>
+				<tr><td>Password</td><td><input placeholder="Enter Password" type="password" name="passw"></td></tr>
+
+				<tr><td colspan="2"><input type="submit" value="Login"></td></tr>
 			</table>
 		</form>
-		<p>För att skapa ett konto tryck <a href="skapaKonto.php">här</a></p>
+		<p><a href="skapaKonto.php">Create free account!</a></p>
+	</center>
 	</body>
 </html>

@@ -17,6 +17,21 @@
 	font-size:20px;
 }
 
+.loggain{
+	width: 200px;
+
+	top:100px;
+	border-left: 10px;
+	
+	font-size: 30px;
+	color:white;
+	background-color: grey;
+}
+.loginform{
+	
+	top:10%;
+	
+}
 
 body{
 	background-color: lightgreen;
