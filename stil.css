@@ -1,0 +1,30 @@
+.kat{
+	font-size:30px;
+	 text-decoration: none;
+}
+
+.name{
+	position: absolute;
+	right:50px;
+	top:0px;
+	font-size:50px;
+}
+
+.logut{
+	position: absolute;
+	right:50px;
+	top:130px;
+	font-size:20px;
+}
+
+
+body{
+	background-color: lightgreen;
+}
+
+.thread{
+	position: absolute;
+	right:50px;
+	top:100px;
+	font-size:20px;
+}
