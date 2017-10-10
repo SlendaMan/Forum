@@ -8,10 +8,24 @@
 		echo "<p class='logut'><a href='loggaUt.php'>Logga ut</a></p>";
 		echo " <p class='thread'> <a href ='createkat.php'> Skapa Thread </a></p>";
 		include('Threads.php');
+
+		
+		
+
+			
+			
+					
+
+			
+		
+
+
+
 	}
 	else {
 		header("location:index.php");
 	}
+
 
 	
 ?>
