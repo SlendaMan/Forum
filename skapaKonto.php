@@ -10,7 +10,7 @@
 				$check_uname = ($sql="select uname from user where uname= 'uname'");
 				
 				if($_POST['uname'] )
-				include "config.php";
+				include('config.php');
 				$un = htmlentities($_POST['uname']);
 				$pw = htmlentities($_POST['passw']);
 				$n = htmlentities($_POST['namn']);

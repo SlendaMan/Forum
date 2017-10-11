@@ -5,8 +5,8 @@
 		$pw = htmlentities($_POST['passw']);
 		$sql = "select password, name, uname, id from user where uname = ?";
 		include "config.php";
-		if($mysqli = connect_db()) {
-				if($stmt = $mysqli->prepare($sql)) {
+		if($con = connect_db()) {
+				if($stmt = $con->prepare($sql)) {
 					$stmt->bind_param("s", $un);
 					$stmt->execute();
 					$stmt->bind_result($p, $name, $user, $id);
