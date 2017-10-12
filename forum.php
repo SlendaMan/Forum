@@ -2,9 +2,19 @@
 	session_start();
 	include("config.php");
 	if(isset($_SESSION['id']) && isset($_SESSION['uname']) && isset($_SESSION['name'])) {
-		echo "<h1>Välkommen " . $_SESSION['name']."</h1>";
-		echo "<p><a href= 'skapaThread.php'> Skapa tråd</a></p>";
+		?>
+		<html>
+		<link rel="stylesheet" type="text/css" href="stil.css">
+		
+			
+	</div>
 
+	</html>
+	<?php
+	echo "<h1 class='welcome'>Welcome " . $_SESSION['name']."</h1>";
+
+	
+	echo "<p class='createthread'><a href= 'skapaThread.php'> Create thread +</a></p>";
 	if($con = connect_db()) {
 		$sql ="select tid, heading, content, name from thread, user where thread.uid = user.id";
 		$result = $con->query($sql);
@@ -22,7 +32,7 @@
 
 
 
-		echo "<p><a href='loggUt.php'>Logga ut</a></p>";
+		echo "<p class='logout'><a href='loggaUt.php'>Logout</a></p>";
 	}
 	else {
 		header("location:index.php");
