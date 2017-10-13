@@ -7,11 +7,20 @@
 		<link rel="stylesheet" type="text/css" href="stil.css">
 		
 			
+<<<<<<< HEAD
 	
 
 	</html>
 	<?php
 	echo "<h1 class='welcome'>Welcome " . $_SESSION['name']."</h1>";
+=======
+	</div>
+
+	</html>
+	<?php
+	echo "<h1 class='welcome'>Welcome " . $_SESSION['name']."</h1>";
+
+>>>>>>> 0b7001dfac94f723b05b686509cdb28a56c9fa73
 	
 	echo "<p class='createthread'><a href= 'skapaThread.php'> Create thread +</a></p>";
 	if($con = connect_db()) {
@@ -41,6 +50,12 @@
 
 		}
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 0b7001dfac94f723b05b686509cdb28a56c9fa73
 		echo "<p class='logout'><a href='loggaUt.php'>Logout</a></p>";
 	}
 	else {

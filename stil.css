@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0b7001dfac94f723b05b686509cdb28a56c9fa73
 .name{
 	position: absolute;
 	right:50px;
@@ -29,12 +34,20 @@ body{
 
 
 a:link{
+<<<<<<< HEAD
 	color:black;
+=======
+	color:white;
+>>>>>>> 0b7001dfac94f723b05b686509cdb28a56c9fa73
 	text-decoration: none;
 }
 
 a:visited{
+<<<<<<< HEAD
 	color:black;
+=======
+	color:white;
+>>>>>>> 0b7001dfac94f723b05b686509cdb28a56c9fa73
 	text-decoration: none;
 
 }
@@ -77,6 +90,7 @@ a:active {
 
 .logout{
 	position: absolute;
+<<<<<<< HEAD
 	
 	right:0px;
 	top:60px;
@@ -94,3 +108,9 @@ a:active {
     margin: 0; 
     width: 30%;
 }
+=======
+	left:370px;
+	top:40px;
+	font-size: 10px;
+}
+>>>>>>> 0b7001dfac94f723b05b686509cdb28a56c9fa73
