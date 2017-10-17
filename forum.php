@@ -22,12 +22,14 @@
 				$tid = $row['tid'];
 				$heading = $row['heading'];
 				$threadtext=$row['name'];
+				include("comments.php");
 
 				?>
 				<html>
 				<div class="threadbox">
 					<?php
 				echo  "<p class ='heading'> $heading </p>". " by $threadtext <br>".$row['content']; 
+
 				echo "<p><a href = 'comment.php?tid=$tid'> Comment </a></p>";
 				?>
 			</div>
