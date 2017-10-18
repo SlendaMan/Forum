@@ -1,7 +1,7 @@
 <?php
 
 include_once("config.php");
-$tid = $_GET['tid'];
+	$tid = $_GET['tid'];
 	if($con = connect_db()) {
 		if(isset($_GET['tid'])){
 	
@@ -23,14 +23,18 @@ $tid = $_GET['tid'];
 		}
 	}
 }
-?>
 
-<form method="POST" action="forum.php?tid=$tid" >
+
+echo"<h1> Comment </h1>
+<form method='post' action='comment.php?tid=$tid' >
 	<table>
-		<tr><td>Comment:</td><td><textarea name="comment"></textarea></td></tr>
+		<tr><td>Comment:</td><td><textarea name='comment'></textarea></td></tr>
 			
 		</td></tr>
 		
-	<tr><td colspan="2"><input type="submit" value="Comment" ></td></tr>
+	<tr><td colspan='2'><input type='submit' value='Comment' ></td></tr>
 	</table>
 </form>
+";
+
+?>
