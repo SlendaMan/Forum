@@ -1,10 +1,11 @@
 <?php
 session_start();
 	include_once("config.php");
-		$tid = $_GET['tid'];
-		if(isset($_POST['comment']) && $_POST['comment']!=""){
+		//$tid = $_GET['tid'];
+		if(isset($_POST['comment']) && $_POST['comment']!="" && isset($_POST['tid'])){
 			
 			$com=$_POST['comment'];
+			$tid = htmlentities($_POST['tid']);
 			
 			$sql = "INSERT INTO answer values(0,?,?)";
 				if($con = connect_db()){

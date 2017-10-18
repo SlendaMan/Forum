@@ -8,10 +8,20 @@
 
 	</html>
 	<?php
-	echo "<h1 class='welcome'>Welcome " . $_SESSION['name']."</h1>";
+	echo "<h1 class='welcome'>Welcome to NienGag</h1>" ;
 
-	
-	echo "<p class='createthread'><a href= 'skapaThread.php'> Create thread +</a></p>";
+	?>
+	<html>
+		<a class="createthread" href ='skapaThread.php'>
+			</html>
+
+		<?php
+	echo " Create thread +";
+	?>
+	</html>
+	</a>
+		</div>
+		<?php
 	if($con = connect_db()) {
 		$sql ="select tid, heading, content, name from thread, user where thread.uid = user.id";
 		$result = $con->query($sql);
@@ -23,30 +33,16 @@
 				$heading = $row['heading'];
 				$threadtext=$row['name'];
 
-				$sql= "select content from answer where tid=$tid";
-					$res = $con->query($sql);
-						if($res->num_rows > 0){
-		
-							echo "<ul>";
-							while($row = $result->fetch_assoc()) {
-							$text = $row['content'];
 				
-							echo  "<p class ='text'> $text </p>"; 
-
-								}	
-							$con-> close();	
-			
-					}
-					else{
-						echo "inga kommentarer";
-					}
 
 				?>
 				<html>
 				<div class="threadbox">
 					<?php
-				echo  "<p class ='heading'> $heading </p>". " by $threadtext <br>".$row['content']; 
 
+				echo  "<p class ='heading'> $heading </p>". " <p class='by'> by $threadtext </p><br>".$row['content'] ."<br>"; 
+
+				include('comments.php');
 				echo "<p><a href = 'comment.php?tid=$tid'> Comment </a></p>";
 				?>
 			</div>

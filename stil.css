@@ -28,48 +28,24 @@ body{
 	background-color: ;
 }
 
-
-a:link{
-
-	color:black;
-
-;
-
-	text-decoration: none;
-}
-
-a:visited{
-
-	color:black;
-
-	
-
-	text-decoration: none;
-
-}
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
+a.createthread:visited{
+	color:white;
 }
 
 .createthread{
-	position: absolute;
+	  position: absolute;
 	right:20px;
-	top:-10px;
-	font-size: 20px;
-	    color: #fff;
+	background-color: #09f;
+	text-decoration: none;
+	top:10px;
+	font-size: 20px;    
     display: inline-block;
     line-height: 40px;
     height: 45px;
     padding: 0 16px;
     border-radius: 2px;
-    
     font-weight: 700;
     margin-left: 10px;
-    background-color: #09f;
 }
 .welcome{
 	background-color: black;
@@ -95,13 +71,27 @@ a:active {
 
 .heading{
 	font-size: 30px;
+	background-color: lightgrey;
+	color:black;
+	height:70px;
+	width:100%;
+	position: relative;
+	top:-40px;
+	left:-10px;
+	padding-right: 20px;
+	text-align: center;
+	
+	line-height:50px;
 
 }
 .threadbox {
     width: 320px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 1px solid gray;
     margin: 0; 
     width: 30%;
+}
+.by{
+	font-size: 10px;
 }
 

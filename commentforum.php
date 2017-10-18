@@ -26,10 +26,10 @@ include_once("config.php");
 
 
 echo"<h1> Comment </h1>
-<form method='post' action='comment.php?tid=$tid' >
+<form method='post' action='comment.php' >
 	<table>
 		<tr><td>Comment:</td><td><textarea name='comment'></textarea></td></tr>
-			
+			<input type='hidden' name='tid' value='$tid'>
 		</td></tr>
 		
 	<tr><td colspan='2'><input type='submit' value='Comment' ></td></tr>
